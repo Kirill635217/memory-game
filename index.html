@@ -7,21 +7,33 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script><link rel="stylesheet" href="./style.css">
 
 </head>
+<style> 
+    .hideShow{
+    display: none;
+} 
+    
+    </style>
+   
 <body>
+    <script>
+       
+    </script>
 <!-- partial:index.partial.html -->
 <div class="align-center">
 
     <h1 class="heading">ЧайТеа</h1>
     <p class="desc">Гра на пам'ять по видам інтелекту</p>
-        <video width="625" height="397" controls>
-            <source src="./Assets/Rick Astley - Never Gonna Give You Up (Video).mp4" type="video/mp4">
-            <source src="./Assets/Rick Astley - Never Gonna Give You Up (Official Music Video).ogg" type="video/ogg">
-        </video>    
+        <div class ="hideShow" id="rick">
+            <video width="625" height="397" controls>
+                <source src="./Assets/Rick Astley - Never Gonna Give You Up (Video).mp4" type="video/mp4">
+                <source src="./Assets/Rick Astley - Never Gonna Give You Up (Official Music Video).ogg" type="video/ogg">
+            </video>    
+        </div>
     <button class="btn" id="btn-start">
         Почати
     </button>
 
-    <div class="cards-container">
+    <div class="cards-container" id="cards">
         <div class="flip-container hide" id="card-template">
             <div class="flipper">
                 <div class="front">
@@ -43,7 +55,7 @@
     </div>
     <div class="pointsText">
         <div class="time">
-            Рахунок: <span id="points"></span>
+            HP: <span id="points"></span>
         </div>
     </div>
 

@@ -63,13 +63,12 @@ BRAINYMO.Game = (function() {
 
     function endGame() {
         timer.stopTimer();
-
         // Retrieve current time
         var time = timer.retrieveTime();
 
         // Retrieve time from storage
         var timeFromStorage = storage.retrieveBestTime();
-
+        hideShow();
         // if there's already time saved in storage check if it's better than current one
         if (timeFromStorage != undefined && timeFromStorage != '' && points > 0) {
             // if current game time is better than one saved in store then save new one
@@ -81,16 +80,18 @@ BRAINYMO.Game = (function() {
         else if(points > 0){
             storage.setBestTime(time);
         }
-        var restartButton = document.getElementById("btn-start");
-        restartButton.remove();
+        // var restartButton = document.getElementById("btn-start");
+        // restartButton.remove();
         // Update best time
         timer.updateBestTime();
-        var delayInMilliseconds = 10000; 
+        // var delayInMilliseconds =3500000; 
 
-        setTimeout(function() { 
-            refreshPage();
-            }, delayInMilliseconds);
+        // setTimeout(function() { 
+        //     refreshPage();
+        //     }, delayInMilliseconds);
     }
+
+
 
     function refreshPage(){
         location.reload();
@@ -106,6 +107,7 @@ BRAINYMO.Game = (function() {
          * Main method for game initialization
          */
         this.startGame = function() {
+            points = 10;
             document.getElementById("points").textContent=points + "";
             card = new BRAINYMO.Card();
             timer = new BRAINYMO.Timer();
@@ -119,11 +121,14 @@ BRAINYMO.Game = (function() {
          * After game initialization call this method in order to generate cards
          */
         this.generateCardSet = function() {
+            points = 10;
+            document.getElementById("points").textContent=points + "";
             // Generate new card set
             card.generateCards(config.cards);
             // Reset active cards array
             activeCards = [];
-
+            if(document.getElementById("btn-start").textContent==="Заново"){
+                refreshPage();}
             // Reset timer
             timer.stopTimer();
             // Set timer
@@ -134,7 +139,9 @@ BRAINYMO.Game = (function() {
     }
 
 })();
-
+function hideShow (){
+    document.getElementById('rick').classList.toggle('hideShow')
+}
 
 
 BRAINYMO.Card = (function () {
@@ -179,7 +186,6 @@ BRAINYMO.Card = (function () {
      */
     function shuffleCards(cardsArray) {
         var currentIndex = cardsArray.length, temporaryValue, randomIndex;
-
         while (0 !== currentIndex) {
             randomIndex = Math.floor(Math.random() * currentIndex);
             currentIndex -= 1;
