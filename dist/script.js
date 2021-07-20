@@ -8,13 +8,14 @@ BRAINYMO.Game = (function() {
     var card;
     var timer;
     var storage;
-    var points = 0;
+    var points = 10;
 
     /**
      * Method that will be invoked on card click
      */
     function handleCardClick() {
-
+        if(points <= 0)
+            return;
         var connection = $(this).data('connection');
         var hit;
 
@@ -30,8 +31,6 @@ BRAINYMO.Game = (function() {
             }
 
             if (hit === true) {
-                points++;
-                document.getElementById("points").textContent=points + "";
                 cardHitCounter++;
                 activeCards[0].add(activeCards[1]).unbind().addClass('wobble cursor-default');
                 activeCards = [];
@@ -45,6 +44,12 @@ BRAINYMO.Game = (function() {
                     // End game
                     endGame();
                 }
+            }
+            else if(hit === false){
+                points--;
+                document.getElementById("points").textContent=points + "";
+                if(points === 0)
+                    endGame();
             }
             // In case when user open more then 2 cards then automatically close first two
             else if(activeCards.length === 3) {
@@ -91,6 +96,7 @@ BRAINYMO.Game = (function() {
          * Main method for game initialization
          */
         this.startGame = function() {
+            document.getElementById("points").textContent=points + "";
             card = new BRAINYMO.Card();
             timer = new BRAINYMO.Timer();
             storage = new BRAINYMO.Storage();
