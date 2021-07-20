@@ -1,3 +1,4 @@
+VARIANT OF THIS GAME
 # Brainymo - Memory game
 
 A Pen created on CodePen.io. Original URL: [https://codepen.io/davinci/pen/yVZapY](https://codepen.io/davinci/pen/yVZapY).
