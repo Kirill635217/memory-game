@@ -71,14 +71,14 @@ BRAINYMO.Game = (function() {
         var timeFromStorage = storage.retrieveBestTime();
 
         // if there's already time saved in storage check if it's better than current one
-        if (timeFromStorage != undefined && timeFromStorage != '') {
+        if (timeFromStorage != undefined && timeFromStorage != '' && points > 0) {
             // if current game time is better than one saved in store then save new one
             if (time.minutes < timeFromStorage.minutes || (time.minutes == timeFromStorage.minutes && time.seconds < timeFromStorage.seconds) ) {
                 storage.setBestTime(time);
             }
         }
         // else if time is not saved in storage save it
-        else {
+        else if(points > 0){
             storage.setBestTime(time);
         }
         var restartButton = document.getElementById("btn-start");
@@ -112,6 +112,7 @@ BRAINYMO.Game = (function() {
             timer = new BRAINYMO.Timer();
             storage = new BRAINYMO.Storage();
             numOfCards = config.cards.length;
+            // storage.setBestTime(null);
             card.attachCardEvent(handleCardClick, config);
         };
 
