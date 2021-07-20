@@ -28,7 +28,7 @@
                     <label>Види інтелектів</label>
                 </div>
                 <div class="back">
-                    <label></label>
+                    <label></label> 
                 </div>
             </div>
         </div>
