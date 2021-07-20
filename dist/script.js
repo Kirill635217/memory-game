@@ -345,7 +345,7 @@ $(function() {
                     connectionID: 2
                 },
                 {
-                    backImg: './Assets/2.1.png',
+                    backImg:  './Assets/2.1.png',
                     connectionID: 2
                 },
                 {
