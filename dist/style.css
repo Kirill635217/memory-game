@@ -12,7 +12,7 @@ body {
 /* Main page */
 .heading {
   font-size: 52px;
-  font-family: "Lobster", cursive;
+  font-family: cursive;
   color: #FF5E5B;
   margin-bottom: 0;
 }
@@ -87,7 +87,8 @@ p.desc {
   cursor: pointer;
   display: inline-block;
   font-size: 22px;
-  padding-top: 15px;
+  padding-top: 50px;
+  margin-top: 60px;
 }
 
 .back {
