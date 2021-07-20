@@ -8,6 +8,8 @@ BRAINYMO.Game = (function() {
     var card;
     var timer;
     var storage;
+    var points = 0;
+
 
     /**
      * Method that will be invoked on card click
@@ -29,6 +31,8 @@ BRAINYMO.Game = (function() {
             }
 
             if (hit === true) {
+                points++;
+                console.log(points + "");
                 cardHitCounter++;
                 activeCards[0].add(activeCards[1]).unbind().addClass('wobble cursor-default');
                 activeCards = [];
