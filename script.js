@@ -85,7 +85,7 @@ BRAINYMO.Game = (function() {
         restartButton.remove();
         // Update best time
         timer.updateBestTime();
-        var delayInMilliseconds = 3000; //1 second
+        var delayInMilliseconds = 10000; 
 
         setTimeout(function() { 
             refreshPage();
@@ -93,8 +93,7 @@ BRAINYMO.Game = (function() {
     }
 
     function refreshPage(){
-        if(points <= 0)
-            location.reload();
+        location.reload();
     }
 
     function checkActiveCards(connections) {
@@ -333,55 +332,55 @@ $(function() {
         var brainymo = new BRAINYMO.Game({
             cards: [
                 {
-                    backImg: './Assets/1.png',
-                    connectionID: 1
-                },
-                {
-                    backImg: './Assets/1.1.png',
-                    connectionID: 1
-                },
-                {
-                    backImg: './Assets/2.png',
-                    connectionID: 2
-                },
-                {
-                    backImg:  './Assets/2.1.png',
-                    connectionID: 2
-                },
-                {
-                    backImg: './Assets/3.png',
-                    connectionID: 3
-                },
-                {
-                    backImg: './Assets/3.1.png',
-                    connectionID: 3
-                },
-                {
-                    backImg: './Assets/4.png',
-                    connectionID: 4
-                },
-                {
                     backImg: './Assets/4.1.png',
-                    connectionID: 4
-                },
-                {
-                    backImg: './Assets/5.png',
-                    connectionID: 5
-                },
-                {
-                    backImg: './Assets/5.1.png', 
-                    connectionID: 5
-                },
-                {
-                    backImg: './Assets/6.png',
-                    connectionID: 6
-                },
-                {
-                    backImg: './Assets/6.1.png',
-                    connectionID: 6
+                    connectionID: 1
                 },
                 {
                     backImg: './Assets/7.png',
+                    connectionID: 1
+                },
+                {
+                    backImg: './Assets/6.png',
+                    connectionID: 2
+                },
+                {
+                    backImg:  './Assets/3.1.png',
+                    connectionID: 2
+                },
+                {
+                    backImg: './Assets/6.1.png',
+                    connectionID: 3
+                },
+                {
+                    backImg: './Assets/5.png',
+                    connectionID: 3
+                },
+                {
+                    backImg: './Assets/5.1.png',
+                    connectionID: 4
+                },
+                {
+                    backImg: './Assets/3.png',
+                    connectionID: 4
+                },
+                {
+                    backImg: './Assets/2.png',
+                    connectionID: 5
+                },
+                {
+                    backImg: './Assets/1.1.png', 
+                    connectionID: 5
+                },
+                {
+                    backImg: './Assets/4.png',
+                    connectionID: 6
+                },
+                {
+                    backImg: './Assets/8.1.png',
+                    connectionID: 6
+                },
+                {
+                    backImg: './Assets/8.png',
                     connectionID: 7
                 },
                 {
@@ -389,11 +388,11 @@ $(function() {
                     connectionID: 7
                 },
                 {
-                    backImg: './Assets/8.png',
+                    backImg: './Assets/2.1.png',
                     connectionID: 8
                 },
                 {
-                    backImg: './Assets/8.1.png',
+                    backImg: './Assets/1.png',
                     connectionID: 8
                 },
             ]
@@ -401,7 +400,7 @@ $(function() {
 
         $('#btn-start').click(function() {
             brainymo.generateCardSet();
-            $(this).text('Restart');
+            $(this).text('Заново');
         });
 
     });

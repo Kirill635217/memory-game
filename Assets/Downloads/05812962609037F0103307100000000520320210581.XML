@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="windows-1251" standalone="no"?>
+<DECLAR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="F0103307.xsd">
+    <DECLARHEAD>
+        <TIN>2962609037</TIN>
+        <C_DOC>F01</C_DOC>
+        <C_DOC_SUB>033</C_DOC_SUB>
+        <C_DOC_VER>7</C_DOC_VER>
+        <C_DOC_TYPE>0</C_DOC_TYPE>
+        <C_DOC_CNT>5</C_DOC_CNT>
+        <C_REG>5</C_REG>
+        <C_RAJ>81</C_RAJ>
+        <PERIOD_MONTH>3</PERIOD_MONTH>
+        <PERIOD_TYPE>2</PERIOD_TYPE>
+        <PERIOD_YEAR>2021</PERIOD_YEAR>
+        <C_STI_ORIG>581</C_STI_ORIG>
+        <C_DOC_STAN>1</C_DOC_STAN>
+        <LINKED_DOCS>
+      <DOC NUM="1" TYPE="1">
+        <C_DOC>F01</C_DOC>
+        <C_DOC_SUB>331</C_DOC_SUB>
+        <C_DOC_VER>7</C_DOC_VER>
+        <C_DOC_TYPE>0</C_DOC_TYPE>
+        <C_DOC_CNT>5</C_DOC_CNT>
+        <C_DOC_STAN>1</C_DOC_STAN>
+        <FILENAME>05812962609037F0133107100000000520320210581.XML</FILENAME>
+      </DOC>
+    </LINKED_DOCS>
+        <D_FILL>11052021</D_FILL>
+        <SOFTWARE>CABINET 0.5.0</SOFTWARE>
+    </DECLARHEAD>
+  <DECLARBODY>
+<HZ>1</HZ>
+<H1KV>1</H1KV>
+<HZY>2021</HZY>
+<HSTI>ГОЛОВНЕ УПРАВЛІННЯ ДПС У ДОНЕЦЬКІЙ ОБЛАСТІ, ЦЕНТРАЛЬНА ДЕРЖАВНА ПОДАТКОВА ІНСПЕКЦІЯ(ЦЕНТРАЛЬНИЙ РАЙОН М.МАРІУПОЛЬ)</HSTI>
+<HNAME>ДЕЛІ ОЛЕКСАНДР АНАТОЛІЙОВИЧ</HNAME>
+<HLOC>УКРАЇНА, 87547, ДОНЕЦЬКА ОБЛАСТЬ, М.МАРІУПОЛЬ, ЖОВТНЕВИЙ Р-Н, ВУЛ. ТРОЇЦЬКА, БУД. 44, КВ.21</HLOC>
+<HEMAIL>alexad.ukraine@gmail.com</HEMAIL>
+<HTEL>0676210681</HTEL>
+<HTIN>2962609037</HTIN>
+<HNACTL>0</HNACTL>
+<T1RXXXXG1S ROWNUM="1">62.01</T1RXXXXG1S>
+<T1RXXXXG2S ROWNUM="1">комп'ютерне програмування</T1RXXXXG2S>
+<R006G3>355431.00</R006G3>
+<R008G3>355431.00</R008G3>
+<R011G3>17771.55</R011G3>
+<R012G3>17771.55</R012G3>
+<R013G3>0.00</R013G3>
+<R014G3>17771.55</R014G3>
+<T2RXXXXG2S ROWNUM="1" xsi:nil="true"/>
+<HFILL>10052021</HFILL>
+<HKEXECUTOR>2962609037</HKEXECUTOR>
+<HBOS>ДЕЛІ ОЛЕКСАНДР АНАТОЛІЙОВИЧ</HBOS>
+</DECLARBODY>
+</DECLAR>

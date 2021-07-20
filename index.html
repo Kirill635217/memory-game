@@ -12,8 +12,11 @@
 <div class="align-center">
 
     <h1 class="heading">ЧайТеа</h1>
-    <p class="desc">Frontend Arsenal Memory Game</p>
-
+    <p class="desc">Гра на пам'ять по видам інтелекту</p>
+        <video width="625" height="397" controls>
+            <source src="./Assets/Rick Astley - Never Gonna Give You Up (Video).mp4" type="video/mp4">
+            <source src="./Assets/Rick Astley - Never Gonna Give You Up (Official Music Video).ogg" type="video/ogg">
+        </video>    
     <button class="btn" id="btn-start">
         Почати
     </button>

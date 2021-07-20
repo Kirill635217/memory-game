@@ -85,7 +85,7 @@ BRAINYMO.Game = (function() {
         restartButton.remove();
         // Update best time
         timer.updateBestTime();
-        var delayInMilliseconds = 3000; //1 second
+        var delayInMilliseconds = 10000; 
 
         setTimeout(function() { 
             refreshPage();
@@ -93,8 +93,7 @@ BRAINYMO.Game = (function() {
     }
 
     function refreshPage(){
-        if(points <= 0)
-            location.reload();
+        location.reload();
     }
 
     function checkActiveCards(connections) {
