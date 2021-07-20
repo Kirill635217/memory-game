@@ -333,67 +333,67 @@ $(function() {
         var brainymo = new BRAINYMO.Game({
             cards: [
                 {
-                    backImg: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSexUDniZ8qYHFpbK4Xyjd4Vs_Fx60Zwe7_5INiYN5H5dNNWiJZ',
+                    backImg: './Assets/1.png',
                     connectionID: 1
                 },
                 {
-                    backTxt: 'GRUNT',
+                    backImg: './Assets/1.1.png',
                     connectionID: 1
                 },
                 {
-                    backImg: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS13Kjh3SeT8Fmcy73l5FKRiH8Tcq9w9SIAddixX-XHwODxe5C',
+                    backImg: './Assets/2.png',
                     connectionID: 2
                 },
                 {
-                    backTxt: 'REACT',
+                    backImg: './Assets/2.1.png',
                     connectionID: 2
                 },
                 {
-                    backImg: 'https://gravatar.com/avatar/5a224f121f96bd037bf6c1c1e2b686fb?s=512&d=https://codepen.io/assets/avatars/user-avatar-512x512-6e240cf350d2f1cc07c2bed234c3a3bb5f1b237023c204c782622e80d6b212ba.png',
+                    backImg: './Assets/3.png',
                     connectionID: 3
                 },
                 {
-                    backTxt: 'GSAP',
+                    backImg: './Assets/3.1.png',
                     connectionID: 3
                 },
                 {
-                    backImg: 'http://richardgmartin.me/wp-content/uploads/2014/11/ember-mascot.jpeg',
+                    backImg: './Assets/4.png',
                     connectionID: 4
                 },
                 {
-                    backTxt: 'EMBER',
+                    backImg: './Assets/4.1.png',
                     connectionID: 4
                 },
                 {
-                    backImg: 'https://odoruinu.files.wordpress.com/2014/11/3284117.png',
+                    backImg: './Assets/5.png',
                     connectionID: 5
                 },
                 {
-                    backTxt: 'KARMA', 
+                    backImg: './Assets/5.1.png', 
                     connectionID: 5
                 },
                 {
-                    backImg: 'https://cdn.auth0.com/blog/webpack/logo.png',
+                    backImg: './Assets/6.png',
                     connectionID: 6
                 },
                 {
-                    backTxt: 'WEBPACK',
+                    backImg: './Assets/6.1.png',
                     connectionID: 6
                 },
                 {
-                    backImg: 'https://res.cloudinary.com/teepublic/image/private/s--JnfxjOP1--/t_Resized%20Artwork/c_fit,g_north_west,h_1054,w_1054/co_ffffff,e_outline:53/co_ffffff,e_outline:inner_fill:53/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1509564403/production/designs/2016815_1.jpg',
+                    backImg: './Assets/7.png',
                     connectionID: 7
                 },
                 {
-                    backTxt: 'ANGULAR',
+                    backImg: './Assets/7.1.png',
                     connectionID: 7
                 },
                 {
-                    backImg: 'https://smyl.es/wurdp/assets/mongodb.png',
+                    backImg: './Assets/8.png',
                     connectionID: 8
                 },
                 {
-                    backTxt: 'MONGO DB',
+                    backImg: './Assets/8.1.png',
                     connectionID: 8
                 },
             ]
