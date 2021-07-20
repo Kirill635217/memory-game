@@ -81,9 +81,20 @@ BRAINYMO.Game = (function() {
         else {
             storage.setBestTime(time);
         }
-
+        var restartButton = document.getElementById("btn-start");
+        restartButton.remove();
         // Update best time
         timer.updateBestTime();
+        var delayInMilliseconds = 3000; //1 second
+
+        setTimeout(function() { 
+            refreshPage();
+            }, delayInMilliseconds);
+    }
+
+    function refreshPage(){
+        if(points <= 0)
+            location.reload();
     }
 
     function checkActiveCards(connections) {
